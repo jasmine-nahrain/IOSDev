@@ -18,6 +18,9 @@
 		4873C2A72641327E007A0672 /* Coinpaprika in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2A62641327E007A0672 /* Coinpaprika */; };
 		4873C2A92641327E007A0672 /* CoinpaprikaNetworkingMocks in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2A82641327E007A0672 /* CoinpaprikaNetworkingMocks */; };
 		4873C2AB2641327E007A0672 /* CoinpaprikaNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2AA2641327E007A0672 /* CoinpaprikaNetworking */; };
+		4873C2AD264132F0007A0672 /* ViewCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873C2AC264132F0007A0672 /* ViewCurrenciesViewController.swift */; };
+		4873C2AF264132FB007A0672 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873C2AE264132FB007A0672 /* TradeViewController.swift */; };
+		4873C2B126413308007A0672 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873C2B026413308007A0672 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		4873C29326413197007A0672 /* IOS_DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_DevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4873C29726413197007A0672 /* IOS_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DevUITests.swift; sourceTree = "<group>"; };
 		4873C29926413197007A0672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4873C2AC264132F0007A0672 /* ViewCurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewCurrenciesViewController.swift; path = ../../../Downloads/ViewCurrenciesViewController.swift; sourceTree = "<group>"; };
+		4873C2AE264132FB007A0672 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		4873C2B026413308007A0672 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				4873C27E26413196007A0672 /* Assets.xcassets */,
 				4873C28026413196007A0672 /* LaunchScreen.storyboard */,
 				4873C28326413196007A0672 /* Info.plist */,
+				4873C2AC264132F0007A0672 /* ViewCurrenciesViewController.swift */,
+				4873C2AE264132FB007A0672 /* TradeViewController.swift */,
+				4873C2B026413308007A0672 /* AddViewController.swift */,
 			);
 			path = IOS_Dev;
 			sourceTree = "<group>";
@@ -274,6 +283,9 @@
 			files = (
 				4873C27A26413196007A0672 /* ViewController.swift in Sources */,
 				4873C27626413196007A0672 /* AppDelegate.swift in Sources */,
+				4873C2B126413308007A0672 /* AddViewController.swift in Sources */,
+				4873C2AD264132F0007A0672 /* ViewCurrenciesViewController.swift in Sources */,
+				4873C2AF264132FB007A0672 /* TradeViewController.swift in Sources */,
 				4873C27826413196007A0672 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
