@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		4873C28226413196007A0672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4873C28026413196007A0672 /* LaunchScreen.storyboard */; };
 		4873C28D26413196007A0672 /* IOS_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873C28C26413196007A0672 /* IOS_DevTests.swift */; };
 		4873C29826413197007A0672 /* IOS_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873C29726413197007A0672 /* IOS_DevUITests.swift */; };
+		4873C2A72641327E007A0672 /* Coinpaprika in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2A62641327E007A0672 /* Coinpaprika */; };
+		4873C2A92641327E007A0672 /* CoinpaprikaNetworkingMocks in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2A82641327E007A0672 /* CoinpaprikaNetworkingMocks */; };
+		4873C2AB2641327E007A0672 /* CoinpaprikaNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 4873C2AA2641327E007A0672 /* CoinpaprikaNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4873C2A92641327E007A0672 /* CoinpaprikaNetworkingMocks in Frameworks */,
+				4873C2AB2641327E007A0672 /* CoinpaprikaNetworking in Frameworks */,
+				4873C2A72641327E007A0672 /* Coinpaprika in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +150,11 @@
 			dependencies = (
 			);
 			name = IOS_Dev;
+			packageProductDependencies = (
+				4873C2A62641327E007A0672 /* Coinpaprika */,
+				4873C2A82641327E007A0672 /* CoinpaprikaNetworkingMocks */,
+				4873C2AA2641327E007A0672 /* CoinpaprikaNetworking */,
+			);
 			productName = IOS_Dev;
 			productReference = 4873C27226413196007A0672 /* IOS_Dev.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 4873C26926413196007A0672;
+			packageReferences = (
+				4873C2A52641327E007A0672 /* XCRemoteSwiftPackageReference "coinpaprika-api-swift-client" */,
+			);
 			productRefGroup = 4873C27326413196007A0672 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +601,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4873C2A52641327E007A0672 /* XCRemoteSwiftPackageReference "coinpaprika-api-swift-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/coinpaprika/coinpaprika-api-swift-client";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4873C2A62641327E007A0672 /* Coinpaprika */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4873C2A52641327E007A0672 /* XCRemoteSwiftPackageReference "coinpaprika-api-swift-client" */;
+			productName = Coinpaprika;
+		};
+		4873C2A82641327E007A0672 /* CoinpaprikaNetworkingMocks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4873C2A52641327E007A0672 /* XCRemoteSwiftPackageReference "coinpaprika-api-swift-client" */;
+			productName = CoinpaprikaNetworkingMocks;
+		};
+		4873C2AA2641327E007A0672 /* CoinpaprikaNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4873C2A52641327E007A0672 /* XCRemoteSwiftPackageReference "coinpaprika-api-swift-client" */;
+			productName = CoinpaprikaNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4873C26A26413196007A0672 /* Project object */;
 }
